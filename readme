@@ -1,0 +1,26 @@
+##DiST codes and example prepared by Jie Peng on  March 2019; jiepeng@ucdavis.edu
+##Ref: Wong, R.K.W., T.C.M. Lee, D. Paul, and J. Peng. Fiber direction estimation, smoothing and tracking in diffusion MRI (with Discussion)  (2016). The Annals of Applied Statistics, 10(3): 1137-1156.
+
+##package needed:
+1. dwi.internals2 (source codes included) 
+2. quadprog, rgenoud, doParallel, cluster
+
+##DiST codes:
+1. dwi_basics.R: some basic functions 
+2. dwi_fit.R: functions for direction estimation and smoothing
+3. dwi_track.R: functions for fiber tracking  
+(dwi_track_realdata.R: slightly modified version to fit the format of the real data output stored as in track.mat)
+4. sim-curve-new.R: codes for simulation
+
+##example scripts:
+1. single_task_estimation.R: scripts for voxel-wise direction estimation
+2. single_task_smoothing.R: scripts for direction smoothing
+3. single_task_tracking.R: scripts for fiber tracking 
+4. DiST_tracking_example_realdata.R: scripts for fiber tracking based on SN-lasso estimators on an ROI of a real DWI dataset (stored in track.mat)
+
+##data:
+1. track.mat: prepared fiber direction information based on SN-lasso estimators on an ROI of a real DWI dataset 
+2. pre_estimation.Rdata: voxel-wise estimation of the simulation example (sim-curve-new.R), used as inputs for direction smoothing 
+3. smoothing.Rdata: direction smoothing results of the simulation example, used as inputs for fiber tracking
+4. tracking.Rdata: tracking results of the simulation example. 
+
