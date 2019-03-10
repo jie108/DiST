@@ -1,9 +1,10 @@
-##DiST codes and example prepared by Jie Peng on  March 2019; jiepeng@ucdavis.edu
-##Ref: Wong, R.K.W., T.C.M. Lee, D. Paul, and J. Peng. Fiber direction estimation, smoothing and tracking in diffusion MRI (with Discussion)  (2016). The Annals of Applied Statistics, 10(3): 1137-1156.
+##DiST codes and examples
+##repository prepared by Jie Peng on  March 2019; jiepeng@ucdavis.edu
+##Ref: Wong, R.K.W., T.C.M. Lee, D. Paul, and J. Peng. Fiber direction estimation, smoothing and tracking in diffusion MRI (2016). The Annals of Applied Statistics, 10(3): 1137-1156.
 
-##package needed:
+##R package needed:
 1. dwi.internals2 (source codes included) 
-2. quadprog, rgenoud, doParallel, cluster
+2. quadprog, rgenoud, doParallel, cluster (download from cran)
 
 ##DiST codes:
 1. dwi_basics.R: some basic functions 
@@ -16,7 +17,8 @@
 1. single_task_estimation.R: scripts for voxel-wise direction estimation
 2. single_task_smoothing.R: scripts for direction smoothing
 3. single_task_tracking.R: scripts for fiber tracking 
-4. DiST_tracking_example_realdata.R: scripts for fiber tracking based on SN-lasso estimators on an ROI of a real DWI dataset (stored in track.mat)
+4. DiST_tracking_example_realdata.R: scripts for fiber tracking based on "SN-lasso estimators" on an ROI of a real DWI dataset (stored in track.mat); Ref: Yan H., Carmichael O., Paul D., and J. Peng. Estimating fiber orientation distribution
+from diffusion MRI with spherical needlets (2018). Medical Imaging Analysis, Vol. 46: 57-72.
 
 ##data:
 1. track.mat: prepared fiber direction information based on SN-lasso estimators on an ROI of a real DWI dataset 
